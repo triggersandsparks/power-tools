@@ -246,29 +246,25 @@ button,
 input,
 select,
 textarea {
-  color: #302816;
+  color: #00171f;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.4; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #544A35;
+  color: #003459;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 20px; }
+  margin: 0 0 40px; }
 
 h1 {
-  font-family: "Francois One", courier;
   font-size: 3.125em;
-  font-weight: normal;
   letter-spacing: -0.05em;
   line-height: 1; }
 
 h2 {
-  font-family: "Francois One", courier;
   font-size: 2.618em;
-  font-weight: normal;
   letter-spacing: -0.025em; }
 
 h3 {
@@ -284,7 +280,7 @@ h6 {
   font-size: 1em; }
 
 p {
-  margin: 0 0 40px; }
+  margin: 0 0 80px; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -397,10 +393,10 @@ label,
   font-weight: 500;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  color: #50715e;
+  color: #003459;
   display: block;
   font-weight: 600;
-  padding-bottom: 2.5px; }
+  padding-bottom: 5px; }
 
 /*--------------------------------------------------------------
 # Buttons
@@ -440,7 +436,8 @@ input[type="submit"] {
 # Lists
 --------------------------------------------------------------*/
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5em 0;
+  padding: 0; }
 
 ul {
   list-style: disc; }
@@ -448,29 +445,44 @@ ul {
 ol {
   list-style: decimal; }
 
+li {
+  list-style: none;
+  position: relative; }
+
+ul li::before,
+ol li::before {
+  content: '\2022';
+  font-size: 0.75em;
+  line-height: 2;
+  position: absolute;
+  right: 100.5%; }
+
+ol {
+  counter-reset: listnumber; }
+
+ol li {
+  counter-increment: listnumber; }
+  ol li::before {
+    content: counter(listnumber) ".";
+    right: 101%; }
+
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
-
-dl {
-  margin: 0;
-  padding-bottom: 40px; }
+  margin-left: 1em; }
 
 dt {
   font-size: 0.8em;
   font-weight: 500;
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  color: #50715e;
+  color: #003459;
   display: block;
   font-weight: 600;
-  padding-bottom: 2.5px; }
+  padding-bottom: 5px; }
 
 dd {
-  margin: 0; }
-  dd + dt {
-    padding-top: 20px; }
+  margin: 0 1.5em 1.5em; }
 
 /*--------------------------------------------------------------
 # Links
@@ -480,7 +492,7 @@ a {
   a:visited {
     color: #A6302C; }
   a:hover, a:focus, a:active {
-    color: #3B5345; }
+    color: #003459; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -508,15 +520,14 @@ object {
 .resource-card {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFD;
-  margin: 20px 0;
-  max-width: 520px;
-  padding-bottom: 10px;
+  margin: 40px 0;
+  padding-bottom: 20px;
   position: relative; }
   @media (max-width: 639px) {
     .activity-card,
     .resource-card {
-      margin-left: -20px;
-      width: calc(100% + 40px); } }
+      margin-left: -40px;
+      width: calc(100% + 80px); } }
   .activity-card p,
   .activity-card ul,
   .activity-card ol,
@@ -524,7 +535,7 @@ object {
   .resource-card ul,
   .resource-card ol {
     margin: 0;
-    padding: 0 20px 10px; }
+    padding: 0 40px 20px; }
 
 .activity-card-title,
 .resource-card-title {
@@ -532,13 +543,13 @@ object {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  padding: 13.33333px 20px; }
+  padding: 20px 40px; }
 
 .activity-card-title {
-  background: #A6302C; }
+  background: #698f3f; }
 
 .resource-card-title {
-  background: #E8B136; }
+  background: #003459; }
 
 /*--------------------------------------------------------------
 # Layout
@@ -547,8 +558,9 @@ body {
   margin: 0; }
 
 .page {
+  background: #f7f9f9;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1040px;
   padding: 0;
   overflow: auto; }
 
@@ -569,7 +581,7 @@ body {
   text-align: center; }
 
 .navigation .logo {
-  padding: 20px; }
+  padding: 40px; }
 
 .navigation ul {
   list-style-type: none;
@@ -577,34 +589,36 @@ body {
   margin: 0;
   text-align: left;
   width: 100%; }
+  .navigation ul li::before {
+    display: none; }
   .navigation ul a {
-    border-top: 1px solid #F2EFEB;
-    color: #302816;
+    border-top: 1px solid #f7f9f9;
+    color: #9ea3b0;
     display: block;
     padding: 20px;
     text-decoration: none; }
   .navigation ul a:hover {
-    background: rgba(242, 239, 235, 0.25); }
+    color: #00171f; }
   .navigation ul a.active {
-    background: rgba(242, 239, 235, 0.5);
-    border-right: 4px solid #544A35;
-    color: #544A35;
+    background: rgba(247, 249, 249, 0.5);
+    border-right: 4px solid #A6302C;
+    color: #A6302C;
     font-weight: 500; }
   .navigation ul li:last-of-type a {
-    border-bottom: 1px solid #DBD4C6; }
+    border-bottom: 1px solid #9ea3b0; }
 
 .content {
-  padding: 20px; }
+  padding: 40px; }
   @media (min-width: 640px) {
     .content {
-      padding: 40px; } }
+      padding: 80px; } }
 
 .panel {
-  border-bottom: 4px solid #544A35;
+  border-bottom: 4px solid #9ea3b0;
   min-height: 85vh;
-  padding: 40px 0; }
+  padding: 80px 0; }
 
 .panel-title {
-  margin-bottom: 40px; }
+  margin-bottom: 80px; }
 
 /*# sourceMappingURL=style.css.map */

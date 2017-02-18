@@ -3,31 +3,27 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
+	color: $color__black;
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: $color__neutral;
+	color: $color__primary;
 	font-weight: 300;
 	line-height: $font__line-height-headings;
 	margin: 0 0 $size__site-gutter;
 }
 
 h1 {
-	font-family: $font__headings;
 	font-size: 3.125em;
-	font-weight: normal;
 	letter-spacing: -0.05em;
 	line-height: 1;
 }
 
 h2 {
-	font-family: $font__headings;
 	font-size: 2.618em;
-	font-weight: normal;
 	letter-spacing: -0.025em;
 }
 

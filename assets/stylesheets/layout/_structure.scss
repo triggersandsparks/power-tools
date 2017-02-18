@@ -4,8 +4,9 @@ body {
 }
 
 .page {
+	background: $color__white;
 	margin: 0 auto;
-	max-width: 1400px;
+	max-width: $size__site-width;
 	padding: 0;
 	overflow: auto;
 }
@@ -44,27 +45,31 @@ body {
 	text-align: left;
 	width: 100%;
 
+	li::before {
+		display: none;
+	}
+
 	a {
 		border-top: 1px solid $color__white;
-		color: $color__black;
+		color: $color__neutral;
 		display: block;
-		padding: $size__site-gutter;
+		padding: $size__site-gutter/2;
 		text-decoration: none;
 	}
 
 	a:hover {
-		background: transparentize($color__white, 0.75);
+		color: $color__black;
 	}
 
 	a.active {
 		background: transparentize($color__white, 0.5);
-		border-right: 4px solid $color__neutral;
-		color: $color__neutral;
+		border-right: 4px solid $color__accent;
+		color: $color__accent;
 		font-weight: 500;
 	}
 
 	li:last-of-type a {
-		border-bottom: 1px solid $color__neutral-highlight;
+		border-bottom: 1px solid $color__neutral;
 	}
 }
 

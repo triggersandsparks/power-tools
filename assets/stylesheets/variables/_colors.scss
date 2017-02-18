@@ -1,20 +1,17 @@
 $color__red: #A6302C;
-$color__green: #3B5345;
+$color__green: #698f3f;
 $color__yellow: #E8B136;
+$color__blue: #003459;
 
-$color__primary: $color__green;
-$color__primary-light: lighten($color__primary, 10%);
-$color__primary-dark: darken($color__primary, 10%);
-
-$color__accent-alt: $color__yellow;
-$color__highlight: lighten($color__accent-alt, 20%);
+$color__primary: $color__blue;
+$color__secondary: $color__green;
 
 $color__accent: $color__red;
 
-$color__black: #302816;
-$color__neutral: #544A35;
+$color__black: #00171f;
+$color__neutral: #9ea3b0;
 $color__neutral-highlight: #DBD4C6;
-$color__white: #F2EFEB;
+$color__white: #f7f9f9;
 $color__pure-white: #FFFFFD;
 
 // Background & body text

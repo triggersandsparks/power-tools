@@ -4,13 +4,6 @@
 	font-size: $sizeValue * 1rem;
 }
 
-// Center block
-@mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 // Format text in small-caps. (Mostly used for labels.)
 @mixin small-caps() {
 	font-size: 0.8em;
@@ -22,7 +15,7 @@
 // Output labels consistently.
 @mixin label() {
 	@include small-caps;
-	color: $color__primary-light;
+	color: $color__primary;
 	display: block;
 	font-weight: 600;
 	padding-bottom: $size__site-gutter/8;

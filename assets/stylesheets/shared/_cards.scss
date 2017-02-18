@@ -3,7 +3,6 @@
 	@include box-shadow;
 	background-color: $color__pure-white;
 	margin: $size__site-gutter 0;
-	max-width: $size__site-width/2;
 	padding-bottom: $size__site-gutter/2;
 	position: relative;
 
@@ -25,13 +24,13 @@
 	color: $color__pure-white;
 	font-family: $font__main;
 	@include font-size(1);
-	padding: $size__site-gutter/1.5 $size__site-gutter;
+	padding: $size__site-gutter/2 $size__site-gutter;
 }
 
 .activity-card-title {
-	background: $color__accent;
+	background: $color__secondary;
 }
 
 .resource-card-title {
-	background: $color__accent-alt;
+	background: $color__primary;
 }

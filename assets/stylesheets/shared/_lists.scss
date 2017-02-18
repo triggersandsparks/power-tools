@@ -1,5 +1,8 @@
+
+
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
+	padding: 0;
 }
 
 ul {
@@ -10,15 +13,37 @@ ol {
 	list-style: decimal;
 }
 
+li {
+	list-style: none;
+	position: relative;
+}
+
+ul li::before,
+ol li::before {
+	content: '\2022';
+	font-size: 0.75em;
+	line-height: 2;
+	position: absolute;
+	right: 100.5%;
+}
+
+ol {
+	counter-reset: listnumber;
+}
+
+ol li {
+	counter-increment: listnumber;
+
+	&::before {
+		content: counter(listnumber) ".";
+		right: 101%;
+	}
+}
+
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dl {
-	margin: 0;
-	padding-bottom: $size__site-gutter*2;
+	margin-left: 1em;
 }
 
 dt {
@@ -26,9 +51,5 @@ dt {
 }
 
 dd {
-	margin: 0;
-
-	& + dt {
-		padding-top: $size__site-gutter;
-	}
+	margin: 0 1.5em 1.5em;
 }
