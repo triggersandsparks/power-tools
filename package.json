@@ -1,0 +1,32 @@
+{
+  "name": "zoom-zoom",
+  "version": "1.0.0",
+  "description": "Companion microsite for a development tools workshop.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahmonster/zoom-zoom"
+  },
+  "keywords": [
+    "tools",
+    "workshop",
+    "css"
+  ],
+  "author": "sarah semark (https://triggersandsparks.com)",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/sarahmonster/zoom-zoom/issues"
+  },
+  "homepage": "https://github.com/sarahmonster/zoom-zoom#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.0.6"
+  }
+}

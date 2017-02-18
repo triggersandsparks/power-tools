@@ -1,0 +1,29 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Format text in small-caps. (Mostly used for labels.)
+@mixin small-caps() {
+	font-size: 0.8em;
+	font-weight: 500;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+}
+
+// Output labels consistently.
+@mixin label() {
+	@include small-caps;
+	color: $color__primary-light;
+	display: block;
+	font-weight: 600;
+	padding-bottom: $size__site-gutter/8;
+}

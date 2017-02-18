@@ -1,0 +1,34 @@
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dl {
+	margin: 0;
+	padding-bottom: $size__site-gutter*2;
+}
+
+dt {
+	@include label;
+}
+
+dd {
+	margin: 0;
+
+	& + dt {
+		padding-top: $size__site-gutter;
+	}
+}
