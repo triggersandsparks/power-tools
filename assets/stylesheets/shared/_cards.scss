@@ -1,4 +1,5 @@
-.activity-card {
+.activity-card,
+.resource-card {
 	@include box-shadow;
 	background-color: $color__pure-white;
 	margin: $size__site-gutter 0;
@@ -11,24 +12,26 @@
 		width: calc(100% + #{$size__site-gutter*2});
 	}
 
-	p {
+	p,
+	ul,
+	ol {
+		margin: 0;
 		padding: 0 $size__site-gutter $size__site-gutter/2;
 	}
 }
 
-.activity-card-title {
-	background: $color__neutral;
+.activity-card-title,
+.resource-card-title {
 	color: $color__pure-white;
 	font-family: $font__main;
 	@include font-size(1);
 	padding: $size__site-gutter/1.5 $size__site-gutter;
 }
 
-.activity-card-link {
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+.activity-card-title {
+	background: $color__accent;
+}
+
+.resource-card-title {
+	background: $color__accent-alt;
 }

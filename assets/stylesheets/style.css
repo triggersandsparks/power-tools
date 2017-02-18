@@ -504,7 +504,8 @@ object {
 /*--------------------------------------------------------------
 # Cards
 --------------------------------------------------------------*/
-.activity-card {
+.activity-card,
+.resource-card {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFD;
   margin: 20px 0;
@@ -512,27 +513,32 @@ object {
   padding-bottom: 10px;
   position: relative; }
   @media (max-width: 639px) {
-    .activity-card {
+    .activity-card,
+    .resource-card {
       margin-left: -20px;
       width: calc(100% + 40px); } }
-  .activity-card p {
+  .activity-card p,
+  .activity-card ul,
+  .activity-card ol,
+  .resource-card p,
+  .resource-card ul,
+  .resource-card ol {
+    margin: 0;
     padding: 0 20px 10px; }
 
-.activity-card-title {
-  background: #544A35;
+.activity-card-title,
+.resource-card-title {
   color: #FFFFFD;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   padding: 13.33333px 20px; }
 
-.activity-card-link {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+.activity-card-title {
+  background: #A6302C; }
+
+.resource-card-title {
+  background: #E8B136; }
 
 /*--------------------------------------------------------------
 # Layout
