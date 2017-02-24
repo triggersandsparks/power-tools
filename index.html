@@ -38,10 +38,10 @@
 			<section class="panel" id="browser-tools">
 				<h2>Browser tools</h2>
 
-				<p>Browser tools have come a long way in the past few years, and they're pretty powerful tools now. Using the native tools built into your browser, you can test how your site performs on differently-sized screens, make quick changes to code and test them live, and debug issues more quickly.</p>
+				<p>Browser tools have come a long way in the past few years, and they're pretty powerful tools now. Using the native tools built into your browser, you can test how your site performs on differently-sized screens, make quick changes to code and test them live, measure your site's performance, and debug issues more quickly.</p>
 
 				<div class="activity-card">
-					<h3 class="activity-card-title">Activity 1</h3>
+					<h3 class="activity-card-title">Activity #1</h3>
 
 					<p>Use your browser's built-in tools to change the colours on this page.</p>
 
@@ -53,7 +53,7 @@
 				</div>
 
 				<div class="activity-card">
-					<h3 class="activity-card-title">Activity 2</h3>
+					<h3 class="activity-card-title">Activity #2</h3>
 
 					<p>Use the console to interact with the page using Javascript.</p>
 
@@ -65,12 +65,13 @@
 				</div>
 
 				<div class="resource-card">
-					<h3 class="resource-card-title">Further resources</h3>
+					<h3 class="resource-card-title">Resources</h3>
 
 					<ul>
 						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools?</a> from MDN</li>
 						<li><a href="https://developer.mozilla.org/en-US/docs/Tools/Tools_Toolbox">Overview of tools available for Firefox</a></li>
 						<li><a href="https://developers.google.com/web/tools/chrome-devtools/">Overview of Chrome's Devtools</a></li>
+						<li><a href="https://www.youtube.com/watch?v=MjRipmP7ffM&feature=youtu.be">Web animation devtools in Chrome &amp; Firefox (video)</a></li>
 					</ul>
 
 				</div>
@@ -78,30 +79,85 @@
 
 
 			<section class="panel" id="local-development">
-				<h2>Local development</h2>
+				<h2>Local development environments</h2>
 
-				<p>Blah blah blah.</p>
+				<p>If you want to really speed up your development time, you'll want to have a way to develop your sites locally. Investing some time in getting your local development
+
+				<p>Benefits of developing your sites locally:
+					<ul>
+						<li>you're able to test all your changes before deploying them to your live production site</li>
+
+						<li>you can build a website when you don't have an internet connection, or when you have a poor internet connection</li>
+
+						<li>working locally is always faster, so you can make and test your changes more rapidly</li>
+					</ul>
+				</p>
+
+				<p>What you need for your development environment will depend on what kind of site you're building and your development workflow. Ideally you want your local development environment to match your web server as closely as possible, so you'll be able to test in a similar environment.</p>
+
+				<p>Many people start with a local server stack, which is a server that runs on your local machine. Common configurations are LAMP (Linux Apache MySQL PHP) WAMP (Windows Apache MySQL PHP) or MAMP (Mac Apache MySQL PHP), since this is also what many web servers use.</p>
+
+				<p>You can also use a virtual machine. A virtual machine basically is an isolated part of your computer that acts as an independent computer. This means it has its own operating system that might be completely different from your computer's operating system. This can be helpful if you have a specific environment you'd like to test, but it can also eat up a lot of your computer's resources. VirtualBox is a popular open-source virtual machine, and you can use a provisioning tool like Vagrant to configure your virtual machine,</p>
+
+				<p>You may also want to try specialised tools like Docker or Laravel Valet. It all depends on what you're looking for!</p>
 
 				<div class="activity-card">
-					<h3 class="activity-card-title">Activity</h3>
+					<h3 class="activity-card-title">Activity #1</h3>
 
-					<p>Set up a local development server on your computer.</p>
+					<p>Plan a local development environment to suit your needs.</p>
+
+					<ol>
+						<li>If your website is already hosted somewhere, find out as much as you can about the environment it's running on. (Server, technologies, versions, etc.)</li>
+						<li>Now, think about what you're going to be developing. Write a list of everything you can think of that you'll need to be able to test and do.</li>
+						<li>Make a note of your computer's limitations—operating system, memory, etc.</li>
+						<li>Using all the information you've written down, choose a tool that suits your needs. For instance, if you need to test very specific technology setups, you'll want a virtual machine of some kind. If your needs are simpler, a local server stack may be a better choice.</li>
+					</ol>
 				</div>
-			</section>
-
-			<section class="panel" id="starter-themes">
-				<h2>Starter themes</h2>
-
-				<p>Blah blah blah.</p>
 
 				<div class="activity-card">
-					<h3 class="activity-card-title">Activity</h3>
+					<h3 class="activity-card-title">Activity #2</h3>
 
-					<p>Set up a local development server on your computer.</p>
+					<p>Set up a local development environment on your computer.</p>
+
+					<ol>
+						<li>Start by installing the tool(s) you identified in activity #1.</li>
+						<li>Set up a local clone of your website on your new local server. Depending on your platform there should be an automated way to import and export your data.</li>
+						<li>Install a text editor of your choice so you can start developing code.</li>
+					</ol>
+
 				</div>
+
+				<div class="resource-card">
+					<h3 class="resource-card-title">Development platforms</h3>
+
+					<ul>
+						<li><a href="https://www.apachefriends.org">XAMPP</a> (MariaDB, PHP, and Perl, for Windows)</li>
+						<li><a href="http://www.wampserver.com/en/">WAMP Server</a></li>
+						<li><a href="https://www.virtualbox.org/">VirtualBox</a></li>
+						<li><a href="https://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/">Vagrant</a> (a provisioning tool for virtual machine)</li>
+						<li><a href="https://github.com/Varying-Vagrant-Vagrants/VVV">Varying Vagrant Vagrants</a> (for WordPress development)</a></li>
+						<li><a href="https://laravel.com/docs/5.4/valet">Laravel Valet</a> (fast &amp; simple PHP development for Mac)</li>
+						<li><a href="https://opensource.com/business/14/7/guide-docker">Docker</a></li> (contained environments)</a></li>
+					</ul>
+				</div>
+
+
+				<div class="resource-card">
+					<h3 class="resource-card-title">Other local development tools &amp; guides</h3>
+
+					<ul>
+						<li><a href="https://atom.io/">Atom</a> (open-source text editor for all platforms)</li>
+						<li><a href="http://brackets.io/">Brackets</a> (open-source text editor for web design)</li>
+						<li><a href="https://www.sitepoint.com/how-set-up-my-development-machine-windows/">How I set up my development machine on Windows</a></li>
+						<li><a href="https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/">Setting up a development environment for WordPress</a> (good overview of tools)</li>
+						<li><a href="https://joemcgill.net/2016/03/automated-wordpress-coding-standards-checks-using-atom/">Automated WordPress standards checking</a></li>
+					</ul>
+				</div>
+
+
 			</section>
 
-		</div><!-- .content -->
+
 
 	</div> <!-- .page -->
 </body>
