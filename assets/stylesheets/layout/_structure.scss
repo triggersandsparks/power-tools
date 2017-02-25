@@ -87,11 +87,12 @@ body * {
 
 // Content sections/panels.
 .panel {
-	border-bottom: 4px solid $color__neutral;
 	min-height: 85vh;
-	padding: $size__site-gutter*2 0;
-}
+	padding-bottom: $size__site-gutter*2;
 
-.panel-title {
-	margin-bottom: $size__site-gutter*2;
+	h2 {
+		border-bottom: 1px solid;
+		margin-bottom: $size__site-gutter;
+		padding-bottom: $size__site-gutter/2;
+	}
 }
