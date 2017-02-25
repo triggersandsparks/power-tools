@@ -3,4 +3,4 @@ Microsite for web tools workshop at CMS Africa
 
 # Contributors
 
-- sarah semark, [//triggersandsparks.com]](triggersandsparks.com), Ginger Spice
+- sarah semark, [triggersandsparks.com](https://triggersandsparks.com), Ginger Spice
