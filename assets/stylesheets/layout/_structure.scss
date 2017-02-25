@@ -1,11 +1,11 @@
 // Page structure.
-body {
-	margin: 0;
+body * {
+	box-sizing: border-box;
 }
 
 .page {
 	background: $color__white;
-	margin: 0 auto;
+	margin: 0;
 	max-width: $size__site-width;
 	padding: 0;
 	overflow: auto;
@@ -19,11 +19,11 @@ body {
 		bottom: 0;
 		border-right: 1px solid $color__neutral-highlight;
 		padding-top: 0;
-		width: 15rem;
+		width: 270px;
 	}
 
 	.content {
-		margin-left: 15rem;
+		margin-left: 270px;
 		min-height: calc(100vh - 5.375rem);
 	}
 }
@@ -55,6 +55,8 @@ body {
 		display: block;
 		padding: $size__site-gutter/2;
 		text-decoration: none;
+		width: 100%;
+		transition: width 200ms ease-in-out;
 	}
 
 	a:hover {
@@ -62,14 +64,15 @@ body {
 	}
 
 	a.active {
-		background: transparentize($color__white, 0.5);
+		background: lighten($color__white, 0.5);
 		border-right: 4px solid $color__accent;
 		color: $color__accent;
 		font-weight: 500;
+		width: calc(100% + 14px);
 	}
 
 	li:last-of-type a {
-		border-bottom: 1px solid $color__neutral;
+		border-bottom: none;
 	}
 }
 
