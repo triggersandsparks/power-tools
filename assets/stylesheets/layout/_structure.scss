@@ -45,6 +45,10 @@ body * {
 	text-align: left;
 	width: 100%;
 
+	li {
+		margin: 0;
+	}
+
 	li::before {
 		display: none;
 	}
@@ -80,7 +84,8 @@ body * {
 .nav-list-title {
 	@include small-caps;
 	color: $color__green;
-	padding: $size__site-gutter $size__site-gutter/2 0;
+	display: block;
+	padding: $size__site-gutter*2 $size__site-gutter/2 $size__site-gutter/4;
 }
 
 // Content.

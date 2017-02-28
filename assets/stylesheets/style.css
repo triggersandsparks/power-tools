@@ -602,6 +602,8 @@ body * {
   margin: 0;
   text-align: left;
   width: 100%; }
+  .navigation ul li {
+    margin: 0; }
   .navigation ul li::before {
     display: none; }
   .navigation ul a {
@@ -629,7 +631,8 @@ body * {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   color: #698f3f;
-  padding: 40px 20px 0; }
+  display: block;
+  padding: 80px 20px 10px; }
 
 .content {
   padding: 40px; }
