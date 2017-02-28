@@ -76,6 +76,13 @@ body * {
 	}
 }
 
+// Navigation section titles
+.nav-list-title {
+	@include small-caps;
+	color: $color__green;
+	padding: $size__site-gutter $size__site-gutter/2 0;
+}
+
 // Content.
 .content {
 	padding: $size__site-gutter;
