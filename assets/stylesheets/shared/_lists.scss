@@ -16,6 +16,7 @@ ol {
 li {
 	list-style: none;
 	position: relative;
+	margin-bottom: $size__site-gutter/4;
 }
 
 ul li::before,

@@ -447,7 +447,8 @@ ol {
 
 li {
   list-style: none;
-  position: relative; }
+  position: relative;
+  margin-bottom: 10px; }
 
 ul li::before,
 ol li::before {
@@ -487,15 +488,27 @@ dd {
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
-a {
+a,
+a:link,
+a:visited {
   color: #A6302C; }
-  a:visited {
-    color: #A6302C; }
-  a:hover, a:focus, a:active {
+  a:hover, a:focus, a:active,
+  a:link:hover,
+  a:link:focus,
+  a:link:active,
+  a:visited:hover,
+  a:visited:focus,
+  a:visited:active {
     color: #003459; }
-  a:focus {
+  a:focus,
+  a:link:focus,
+  a:visited:focus {
     outline: thin dotted; }
-  a:hover, a:active {
+  a:hover, a:active,
+  a:link:hover,
+  a:link:active,
+  a:visited:hover,
+  a:visited:active {
     outline: 0; }
 
 /*--------------------------------------------------------------
